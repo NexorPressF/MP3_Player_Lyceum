@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StatsWindow</class>
+ <widget class="QWidget" name="StatsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Статистика прослушивания</string>
+  </property>
+  <layout class="QVBoxLayout" name="statsLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="dayTab">
+      <attribute name="title">
+       <string>Сегодня</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="dayLayout">
+       <item>
+        <widget class="QLabel" name="dayTotalLabel">
+         <property name="text">
+          <string>Всего: 0 мин</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="dayTable"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="dayShareLabel">
+         <property name="text">
+          <string>Доля самого популярного трека</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="dayShareBar">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="weekTab">
+      <attribute name="title">
+       <string>7 дней</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="weekLayout">
+       <item>
+        <widget class="QLabel" name="weekTotalLabel">
+         <property name="text">
+          <string>Всего: 0 мин</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="weekTable"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="weekShareLabel">
+         <property name="text">
+          <string>Доля самого популярного трека</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="weekShareBar">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="allTab">
+      <attribute name="title">
+       <string>Всё время</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="allLayout">
+       <item>
+        <widget class="QLabel" name="allTotalLabel">
+         <property name="text">
+          <string>Всего: 0 мин</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="allTable"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="allShareLabel">
+         <property name="text">
+          <string>Доля самого популярного трека</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="allShareBar">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
